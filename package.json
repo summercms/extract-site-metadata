@@ -1,0 +1,56 @@
+{
+  "name": "extract-site-metadata",
+  "version": "1.0.0",
+  "description": "Metadata extractor for the sprawling web",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sc10ntech/extract-site-metadata.git"
+  },
+  "keywords": [
+    "web",
+    "seo",
+    "metadata",
+    "opengraph",
+    "schema.org",
+    "structured-data"
+  ],
+  "author": "info@sc10n.com",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/sc10ntech/extract-site-metadata/issues"
+  },
+  "homepage": "https://github.com/sc10ntech/extract-site-metadata#readme",
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.12.1",
+    "@types/cheerio": "^0.22.22",
+    "@types/dompurify": "^2.0.4",
+    "@types/jest": "^26.0.15",
+    "@types/lodash": "^4.14.162",
+    "@types/node": "^14.14.2",
+    "@types/validator": "^13.1.0",
+    "@types/xregexp": "^4.3.0",
+    "@typescript-eslint/eslint-plugin": "^4.5.0",
+    "@typescript-eslint/parser": "^4.5.0",
+    "eslint": "^7.11.0",
+    "eslint-config-prettier": "^6.14.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.3.0",
+    "jest": "^26.6.1",
+    "prettier": "^2.1.2",
+    "schema-dts": "^0.7.1",
+    "semver": "^7.3.2",
+    "typedoc": "^0.19.2",
+    "typescript": "^4.0.3"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "dompurify": "^2.2.0",
+    "lodash": "^4.17.20",
+    "validator": "^13.1.17",
+    "xregexp": "^4.3.0"
+  }
+}
