@@ -4,6 +4,9 @@
   "description": "Metadata extractor for the sprawling web",
   "main": "./dist/index.js",
   "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "lint": "eslint 'src/**/*.{js,ts}' --quiet --fix",
     "test": "jest"
   },
   "repository": {
@@ -52,5 +55,44 @@
     "lodash": "^4.17.20",
     "validator": "^13.1.17",
     "xregexp": "^4.3.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-typescript"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:@typescript-eslint/recommended",
+      "prettier/@typescript-eslint",
+      "plugin:prettier/recommended",
+      "eslint:recommended"
+    ],
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint",
+      "prettier"
+    ],
+    "rules": {
+      "array-bracket-spacing": "error",
+      "new-cap": "off",
+      "prettier/prettier": "error",
+      "sort-keys": "off",
+      "space-infix-ops": "error"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
+  "prettier": {
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "none"
   }
 }
