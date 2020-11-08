@@ -1,6 +1,6 @@
 {
   "name": "extract-site-metadata",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "Metadata extractor for the sprawling web",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -14,11 +14,12 @@
     "format": "prettier --write \"src/*.{js,ts,json,md}\"",
     "prepare": "rimraf dist",
     "lint": "eslint 'src/**/*.{js,ts,tsx}' --quiet --fix",
-    "test": "jest --silent"
+    "test": "jest --silent",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sc10ntech/extract-site-metadata.git"
+    "url": "https://github.com/sc10ntech/extract-site-metadata.git"
   },
   "keywords": [
     "web",
@@ -60,7 +61,8 @@
     "semver": "^7.3.2",
     "ts-jest": "^26.4.4",
     "typedoc": "^0.19.2",
-    "typescript": "^4.0.5"
+    "typescript": "^4.0.5",
+    "semantic-release": "^17.2.2"
   },
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",

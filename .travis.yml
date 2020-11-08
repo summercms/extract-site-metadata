@@ -1,7 +1,29 @@
 language: node_js
+
 node_js:
-  - '12.17.0'
-script:
-  - npm run build
-  - npm run lint
-  - npm run test
+  - 12
+
+stages:
+  - compile
+  - test
+  - release
+
+jobs:
+  include:
+    - stage: compile
+      script:
+        - npm run build
+    - stage: test
+      script:
+        - npm run lint
+        - npm run test
+    # Define the release stage that runs semantic-release
+    - stage: release
+      node_js: lts/*
+      # Advanced: optionally overwrite your default `script` step to skip the tests
+      # script: skip
+      deploy:
+        provider: script
+        skip_cleanup: true
+        script:
+          - npx semantic-release
