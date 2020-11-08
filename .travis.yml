@@ -3,23 +3,22 @@ language: node_js
 node_js:
   - 12
 
-stages:
-  - compile
-  - test
-  - release
-
 jobs:
   include:
-    - stage: compile
+    - stage: install
       script:
-        - npm run build
+        - npm install
+      skip_cleanup: true
     - stage: test
       script:
         - npm run lint
-        - npm run test
+        - npm run collectCoverage
+      skip_cleanup: true
+    - stage: compile
+      script:
+        - npm run build
     # Define the release stage that runs semantic-release
     - stage: release
-      node_js: lts/*
       # Advanced: optionally overwrite your default `script` step to skip the tests
       # script: skip
       deploy:
@@ -27,3 +26,4 @@ jobs:
         skip_cleanup: true
         script:
           - npx semantic-release
+        if: branch = master
