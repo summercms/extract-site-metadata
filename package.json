@@ -9,10 +9,10 @@
     "/src"
   ],
   "scripts": {
-    "build": "npm run prepare && tsc",
+    "build": "tsc",
+    "clean": "rimraf dist",
     "collectCoverage": "jest --collectCoverage",
     "format": "prettier --write \"src/*.{js,ts,json,md}\"",
-    "prepare": "rimraf dist",
     "lint": "eslint 'src/**/*.{js,ts,tsx}' --quiet --fix",
     "test": "jest --silent",
     "semantic-release": "semantic-release"
@@ -202,6 +202,7 @@
     "trailingComma": "none"
   },
   "release": {
+    "pkgRoot": "dist",
     "branches": [
       "master",
       "next"
