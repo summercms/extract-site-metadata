@@ -14,9 +14,9 @@ const candiateWords = (strippedInput: string): string[] => {
 };
 
 const getFilePath = (lang: string) => {
-  const resolvedPath = path.join(
+  const resolvedPath = path.resolve(
     __dirname,
-    `./data/stopwords/stopwords-${lang}.txt`
+    `../data/stopwords/stopwords-${lang}.txt`
   );
   return resolvedPath;
 };
