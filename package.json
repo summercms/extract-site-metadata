@@ -203,7 +203,6 @@
     "trailingComma": "none"
   },
   "release": {
-    "pkgRoot": "dist",
     "branches": [
       "master",
       "next"
