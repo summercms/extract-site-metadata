@@ -1,3 +1,11 @@
+## [1.2.3](https://github.com/sc10ntech/extract-site-metadata/compare/v1.2.2...v1.2.3) (2020-11-09)
+
+
+### Bug Fixes
+
+* **filepaths:** resolving data/stopwords paths ([8c0c81f](https://github.com/sc10ntech/extract-site-metadata/commit/8c0c81fb091d85f706cc02cfe41c55470ca0b37c))
+* **files:** add __dirname to path.resolve for stopwords ([a59ff46](https://github.com/sc10ntech/extract-site-metadata/commit/a59ff468079897a36489569784f97e1726200f36))
+
 ## [1.2.2](https://github.com/sc10ntech/extract-site-metadata/compare/v1.2.1...v1.2.2) (2020-11-09)
 
 
