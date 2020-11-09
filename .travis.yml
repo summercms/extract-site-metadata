@@ -8,12 +8,10 @@ jobs:
     - stage: install
       script:
         - npm install
-      skip_cleanup: true
     - stage: test
       script:
         - npm run lint
         - npm run collectCoverage
-      skip_cleanup: true
     # Define the release stage that runs semantic-release
     - stage: build & release
       script:
