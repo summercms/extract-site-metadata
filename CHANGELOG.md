@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/sc10ntech/extract-site-metadata/compare/v1.2.1...v1.2.2) (2020-11-09)
+
+
+### Bug Fixes
+
+* **lib:** removing path lib and ref ([c0e6fd3](https://github.com/sc10ntech/extract-site-metadata/commit/c0e6fd3c31bd6f1f1a946a7a6d89eb531d2bb57a))
+
 ## [1.2.1](https://github.com/sc10ntech/extract-site-metadata/compare/v1.2.0...v1.2.1) (2020-11-09)
 
 
