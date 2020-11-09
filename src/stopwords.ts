@@ -14,7 +14,11 @@ const candiateWords = (strippedInput: string): string[] => {
 };
 
 const getFilePath = (lang: string) => {
-  return path.resolve(`./data/stopwords/stopwords-${lang}.txt`);
+  const resolvedPath = path.join(
+    __dirname,
+    `./data/stopwords/stopwords-${lang}.txt`
+  );
+  return resolvedPath;
 };
 
 const removePunctuation = (content: string) => {
