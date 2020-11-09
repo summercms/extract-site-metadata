@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/sc10ntech/extract-site-metadata/compare/v1.2.0...v1.2.1) (2020-11-09)
+
+
+### Bug Fixes
+
+* **files:** add missing data files to publish ([3a4cf9e](https://github.com/sc10ntech/extract-site-metadata/commit/3a4cf9e44122341462642a8cecdcf2c84c744878))
+
 # [1.2.0](https://github.com/sc10ntech/extract-site-metadata/compare/v1.1.0...v1.2.0) (2020-11-09)
 
 
