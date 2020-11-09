@@ -1,5 +1,4 @@
 import fs from 'fs';
-import path from 'path';
 
 interface StopWords {
   stopWordCount: number;
@@ -14,7 +13,7 @@ const candiateWords = (strippedInput: string): string[] => {
 };
 
 const getFilePath = (lang: string) => {
-  return path.resolve(`./data/stopwords/stopwords-${lang}.txt`);
+  return `./data/stopwords/stopwords-${lang}.txt`;
 };
 
 const removePunctuation = (content: string) => {
