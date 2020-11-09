@@ -1,6 +1,6 @@
 {
   "name": "extract-site-metadata",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "description": "Metadata extractor for the sprawling web",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
