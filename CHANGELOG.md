@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/sc10ntech/extract-site-metadata/compare/v1.2.3...v1.2.4) (2020-11-14)
+
+
+### Bug Fixes
+
+* **various:** license copyright; readme; add logs to examples ([9b134d7](https://github.com/sc10ntech/extract-site-metadata/commit/9b134d76cf7ac000aecfafca6e2f36917f8842a2))
+
 ## [1.2.3](https://github.com/sc10ntech/extract-site-metadata/compare/v1.2.2...v1.2.3) (2020-11-09)
 
 
