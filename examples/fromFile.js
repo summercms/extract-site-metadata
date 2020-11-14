@@ -9,6 +9,7 @@ const getMetadataFromFile = (filename) => {
   );
   const markup = fs.readFileSync(filepath).toString();
   const metadata = extractLinkMetadata(markup, 'http://localhost:8080');
+  console.log(`metadata: ${metadata}`);
   return metadata;
 };
 

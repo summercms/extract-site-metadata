@@ -12,8 +12,6 @@ const processLink = async (resourceUrl) => {
           body: res.data,
           resourceUrl
         };
-      } else {
-        return {};
       }
     })
     .catch((err) => {
@@ -29,6 +27,7 @@ const urlsToTest = {
 processLink(urlsToTest['cnbcone']).then((data) => {
   if (data) {
     const dataObj = extractSiteMetadata(data.body, data.resourceUrl);
+    console.log(`dataObj: ${dataObj}`);
     return dataObj;
   }
 });

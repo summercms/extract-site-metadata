@@ -79,8 +79,6 @@ const processSite = async (url) => {
           body: res.data,
           url
         };
-      } else {
-        return {};
       }
     })
     .catch(err => {
@@ -99,6 +97,6 @@ processSite('https://www.cnbc.com/guide/personal-finance-101-the-complete-guide-
 1. Run: `git clone https://github.com/sc10ntech/extract-site-metadata.git`
 2. Change into project directory and install deps: `cd extract-site-metadata && npm i`
 
-## Creids & Disclaimer
+## Credits & Disclaimer
 
 extract-site-metadata was inspired by, and tries to be the spiritual successor to [node-unfluff](https://github.com/ageitgey/node-unfluff)
