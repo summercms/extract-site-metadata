@@ -1,3 +1,10 @@
+## [1.2.5](https://github.com/sc10ntech/extract-site-metadata/compare/v1.2.4...v1.2.5) (2020-12-06)
+
+
+### Bug Fixes
+
+* **sec:** address sec vuls; advisories 1572 and 1582 ([29c2f20](https://github.com/sc10ntech/extract-site-metadata/commit/29c2f20271d65ea030a317a1bd3c99982f759a6b))
+
 ## [1.2.4](https://github.com/sc10ntech/extract-site-metadata/compare/v1.2.3...v1.2.4) (2020-11-14)
 
 
