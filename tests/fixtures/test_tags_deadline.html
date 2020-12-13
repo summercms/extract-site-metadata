@@ -132,12 +132,6 @@
 				}
 			}
 
-			if ( document.referrer == "" || document.referrer.indexOf("http://www.deadline.com") == -1 ) {
-				var exp_date=new Date();
-				exp_date.setDate(exp_date.getDate() + 1);
-				document.cookie = "mobile_referrer=" + encodeURIComponent(document.referrer) + ";expires=" + exp_date.toGMTString() + ";path=/;domain=.deadline.com";
-			}
-
 			if ( "1" == mobile_cookie_value ) {
 				// Redirect to mobile
 				//console.log("Cookie == 1, will redirect");
@@ -412,28 +406,6 @@ display:none;
       adIframeDiv=jQuery('.mmcAd_Iframe_div').eq(0);
   adIframeDiv.attr('data-adrender', 0);
   }
- 	function mmc_load_ad() {
-				adIframeDiv=jQuery('.mmcAd_Iframe_div').eq(0);
-				if (adIframeDiv.length > 0){
-					adIframe=jQuery('<iframe class="mmcAd_Iframe '+ adIframeDiv.attr('data-adclass') +'" src="'+adIframeDiv.attr('data-adurl')+';ord='+ord+'" width="'+adIframeDiv.attr('data-adWidth')+'px" height="'+adIframeDiv.attr('data-adHeight')+'px"	marginwidth="0" marginheight="0"  frameborder="0" scrolling="no"></ifr'+'ame>');
-					adIframeDiv.replaceWith(adIframe);
-                                        
-					if (adIframeDiv.attr('data-adrender')>0){
-                                            setTimeout('mmc_load_ad()',adIframeDiv.attr('data-adrender'));
-                                            
-                                        }
-					else if (adIframeDiv.attr('data-adrender')==0){
-                                            
-							adIframe.load(function(){
-							mmc_load_ad();
-						});
-                                       }
-					else{
-						mmc_load_ad();
-                                        }
-				}
-			}
-			jQuery(document).ready(function(){mmc_load_ad();});
 
    </script><noscript>
   <a href="http://ad.doubleclick.net/jump/DHD/ny/article;kw=hollywood;kw=london;kw=movies;kw=new-york;kw=tv;kw=amazon-prime;kw=deadline-big-media;kw=steve-ballmer;kw=tivo;tile=1;sz=970x90;ord=123456789?" target="_blank">
