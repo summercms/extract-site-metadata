@@ -101,7 +101,6 @@ function cleanText(text: string): string {
     return text
       .replace(/[\r\n\t]/g, ' ')
       .replace(/\s\s+/g, ' ')
-      .replace(/<!--.+?-->/g, '')
       .replace(/�/g, '')
       .trim();
   }
