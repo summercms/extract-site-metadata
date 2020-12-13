@@ -1,4 +1,5 @@
 import cheerio from 'cheerio';
+import DOMPurify from 'dompurify';
 import isEqual from 'lodash/isEqual';
 import uniq from 'lodash/uniq';
 import { NewsArticle, Article } from 'schema-dts';
@@ -104,7 +105,7 @@ function cleanText(text: string): string {
       .replace(/�/g, '')
       .trim();
   }
-  return text;
+  return DOMPurify.sanitize(text);
 }
 
 function cleanTitle(title: string, delimiters: string[]): string {

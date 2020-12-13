@@ -4372,7 +4372,6 @@ handleSendResponse = function(s) {
 	console.log(JSON.stringify(s));
 	console.log(s.status);
 	if (s.status == 4) {
-		s2title.html('Your message was sent to '+phone_n+'.');
 	} else if (s.status == 5) {
 		s2title.html('Send Failed');
 	} else if (s.status == 3) {

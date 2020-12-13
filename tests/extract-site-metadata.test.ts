@@ -158,7 +158,7 @@ const checkFixture = (site: string, fields = allFields) => {
   });
 };
 
-describe('Extract Link Metadata', () => {
+describe('Extract Site Metadata', () => {
   it('exists', () => {
     expect(extractSiteMetadata).toBeDefined();
   });

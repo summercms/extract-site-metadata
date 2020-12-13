@@ -1770,13 +1770,6 @@ $("#popular ul.tabbedList li a").click(function(){
 </script>
 
 <script type="text/javascript">
-$("#article-entry-content a").each(function(){
-        if($(this).attr("href").indexOf("aolnews.com") == -1){
-           $(this).attr("target","_blank")}
-      });
-
-</script>
-<script type="text/javascript">
     (function($) {
         $(document).ready(function()    {
             createTagPagination();
@@ -1836,11 +1829,6 @@ $("#article-entry-content a").each(function(){
                 }else if(currentPage!=1){
                    $('#tagPagination').show();
                 }
-                if($('#tag-river div.river-item').length ==0 && $('#tag-river-2 div.river-item').length ==0 && $('#relStories li.rsListItem').length==0){
-                   $('#tagPagFirst').html($('#tagPagFirst').html().replace(/\|/i,''));
-                   $('#tagPagNext').hide();
-                }
-
     	}
 
     }
