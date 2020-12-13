@@ -1,3 +1,12 @@
+## [1.2.6](https://github.com/sc10ntech/extract-site-metadata/compare/v1.2.5...v1.2.6) (2020-12-13)
+
+
+### Bug Fixes
+
+* **extract-test:** rename test name ([8294a6e](https://github.com/sc10ntech/extract-site-metadata/commit/8294a6ec3c87e0608406dc322fcbc8e624d33a7e))
+* **extractr:** apply dompurify to sanitize in cleanText ([13c0014](https://github.com/sc10ntech/extract-site-metadata/commit/13c0014ccfc6fd142fbd9be6e9f4d5b38035a305))
+* **fixtures:** various potentially vulnerable code removed from site fixtures for tests ([f261096](https://github.com/sc10ntech/extract-site-metadata/commit/f26109634621fd7f3b8689578c4bfada7382475a))
+
 ## [1.2.5](https://github.com/sc10ntech/extract-site-metadata/compare/v1.2.4...v1.2.5) (2020-12-06)
 
 
