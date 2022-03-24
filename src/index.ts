@@ -1,11 +1,11 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import cheerio from 'cheerio';
-import { NewsArticle, Article } from 'schema-dts';
-import { URL } from 'url';
+import cheerio from "cheerio";
+import { NewsArticle, Article } from "schema-dts";
+import { URL } from "url";
 
-import cleaner from './cleaner';
-import extractor, { LinkObj, VideoAttrs } from './extractor';
+import cleaner from "./cleaner";
+import extractor, { LinkObj, VideoAttrs } from "./extractor";
 
 export interface PageData {
   author: string[];
@@ -58,7 +58,7 @@ export interface LazyExtractor {
 const extractSiteMetadata = (
   markup: string,
   resourceUrl: string,
-  lang = 'en'
+  lang = "en"
 ): PageData => {
   const resourceUrlObj = new URL(resourceUrl);
   const doc = cheerio.load(markup, { xmlMode: true });
@@ -82,7 +82,7 @@ const extractSiteMetadata = (
     softTitle: extractor.softTitle(doc),
     tags: extractor.tags(doc),
     title: extractor.title(doc),
-    type: extractor.type(doc)
+    type: extractor.type(doc),
   };
 
   // Step 1: Clean the doc
@@ -105,7 +105,7 @@ export default extractSiteMetadata;
 export const lazy = (
   html: string,
   resourceUrl: string,
-  language = 'en'
+  language = "en"
 ): LazyExtractor => {
   const resourceUrlObj = new URL(resourceUrl);
   global.lazyPageData = global.lazyPageData || {};
@@ -224,7 +224,7 @@ export const lazy = (
       const topNode = getTopNode.call(global, doc, this.lang());
       global.lazyPageData.videos = extractor.videos(doc, topNode);
       return global.lazyPageData.videos;
-    }
+    },
   };
 };
 
