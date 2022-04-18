@@ -1,3 +1,4 @@
+import cheerio from "cheerio";
 import DOMPurify from "isomorphic-dompurify";
 import isEqual from "lodash/isEqual";
 import uniq from "lodash/uniq";
@@ -700,8 +701,14 @@ const extractor: Extractor = {
     if (jsonldTag) {
       // convert jsonldTag to html
       const jsonldObj = jsonldTag.html() || JSON.stringify("");
+      // however we need to unescape HTML
+      const refinedJsonlddoc = cheerio.load(jsonldObj, {
+        xmlMode: true,
+        decodeEntities: false,
+      });
+      const refinedJsonLdObj = refinedJsonlddoc.html() || JSON.stringify("");
       try {
-        const parsedJSON: NewsArticle | Article = JSON.parse(jsonldObj);
+        const parsedJSON: NewsArticle | Article = JSON.parse(refinedJsonLdObj);
         if (parsedJSON) {
           if (!Array.isArray(parsedJSON)) {
             return parsedJSON;
