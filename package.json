@@ -15,7 +15,7 @@
     "collectCoverage": "jest --collectCoverage",
     "format": "prettier --write \"src/*.{js,ts,json,md}\"",
     "lint": "eslint 'src/**/*.{js,ts,tsx}' --quiet --fix",
-    "test": "jest --silent",
+    "test": "jest",
     "semantic-release": "semantic-release",
     "prepare": "husky install"
   },
@@ -99,7 +99,7 @@
       "**/?(*.)+(spec|test).+(ts)"
     ],
     "transform": {
-      "^.+\\.(ts)$": "ts-jest"
+      "^.+\\.(js|ts)$": "ts-jest"
     },
     "verbose": true
   },
