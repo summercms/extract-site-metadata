@@ -1,6 +1,6 @@
-import fs from 'fs';
-import path from 'path';
-import extractLinkMetadata from '../dist/index';
+import fs from "fs";
+import path from "path";
+import extractLinkMetadata from "../dist/index";
 
 const getMetadataFromFile = (filename) => {
   const filepath = path.resolve(
@@ -8,11 +8,11 @@ const getMetadataFromFile = (filename) => {
     `../tests/fixtures/test_${filename}.html`
   );
   const markup = fs.readFileSync(filepath).toString();
-  const metadata = extractLinkMetadata(markup, 'http://localhost:8080');
+  const metadata = extractLinkMetadata(markup, "http://localhost:8080");
   console.log(`metadata: ${metadata}`);
   return metadata;
 };
 
-getMetadataFromFile('cnbc2');
+getMetadataFromFile("cnbc2");
 
 // node -r esm fromFile.js
