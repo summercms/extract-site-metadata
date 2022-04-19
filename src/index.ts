@@ -72,7 +72,7 @@ const extractSiteMetadata = (
     description: extractor.description(doc),
     favicon: extractor.favicon(doc, resourceUrlObj),
     image: extractor.image(doc),
-    jsonld: extractor.jsonld(doc),
+    jsonld: extractor.jsonld(cheerio.load(markup)),
     keywords: extractor.keywords(doc),
     lang: language,
     locale: extractor.locale(doc),
