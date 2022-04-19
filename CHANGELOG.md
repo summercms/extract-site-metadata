@@ -1,3 +1,16 @@
+# [1.3.0](https://github.com/sc10ntech/extract-site-metadata/compare/v1.2.6...v1.3.0) (2022-04-19)
+
+
+### Bug Fixes
+
+* **ci:** fix build and test gh workflow job ([a59b398](https://github.com/sc10ntech/extract-site-metadata/commit/a59b398c9b6b2ea942e37735bddaf84725c9fc71))
+* **various:** adjust jsonld extractor logic; remove xmlMode for jsonld cheerio doc ([c0855d1](https://github.com/sc10ntech/extract-site-metadata/commit/c0855d10cb58d79224cc92d96a62064020b84d29))
+
+
+### Features
+
+* **ci:** add gh action workflow for pr - build and tests ([1bf0168](https://github.com/sc10ntech/extract-site-metadata/commit/1bf016800e64afb94c82c269fdb55ba82b292913))
+
 ## [1.2.6](https://github.com/sc10ntech/extract-site-metadata/compare/v1.2.5...v1.2.6) (2020-12-13)
 
 
