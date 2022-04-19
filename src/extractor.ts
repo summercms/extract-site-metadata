@@ -700,13 +700,7 @@ const extractor: Extractor = {
     const jsonldTag = doc('script[type="application/ld+json"]');
     if (jsonldTag) {
       // convert jsonldTag to html
-      const jsonldObj = jsonldTag.html() || JSON.stringify("");
-      // however we need to unescape HTML
-      const refinedJsonlddoc = cheerio.load(jsonldObj, {
-        xmlMode: true,
-        decodeEntities: false,
-      });
-      const refinedJsonLdObj = refinedJsonlddoc.html() || JSON.stringify("");
+      const refinedJsonLdObj = jsonldTag.html() || JSON.stringify("");
       try {
         const parsedJSON: NewsArticle | Article = JSON.parse(refinedJsonLdObj);
         if (parsedJSON) {
