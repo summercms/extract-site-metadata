@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/sc10ntech/extract-site-metadata/compare/v1.3.0...v1.3.1) (2022-04-26)
+
+
+### Bug Fixes
+
+* **deps:** adjust deps; update/upgrade some deps ([39df650](https://github.com/sc10ntech/extract-site-metadata/commit/39df6502086a188223b62bb07c9aa9d9e177d7d1))
+
 # [1.3.0](https://github.com/sc10ntech/extract-site-metadata/compare/v1.2.6...v1.3.0) (2022-04-19)
 
 
